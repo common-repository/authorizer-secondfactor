@@ -1,0 +1,102 @@
+#tfa-advanced:not(:target) .tfa-content,
+#tfa-advanced:not(:target) .tfa-hide,
+#tfa-advanced:target .tfa-show {display: none;}
+#tfa-advanced:target .tfa-content {display: block;}
+
+.tfa-content {
+/** box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3); **/
+padding: 20px 20px 1px;
+margin: 0px 0px 10px;
+}
+
+.tfa-show,
+.tfa-hide {
+padding:10px;
+background: rgb(254, 164, 0);
+box-shadow:none!important;
+color:#fff;
+font-weight:bold;
+}
+
+.tfa-show:hover,
+.tfa-hide:hover {
+background: rgb(255, 214, 118);
+color:#fff!important;
+transition:0.2s all ease-in-out!important;
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+    color: #909090;
+}
+:-moz-placeholder {
+    font-style: italic;
+    color: #909090;
+}
+::-moz-placeholder {
+    font-style: italic;
+    color: #909090;
+}
+:-ms-input-placeholder {
+    font-style: italic;
+    color: #909090;
+}
+
+input.authInput::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    display: none !important;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+}
+
+input:disabled::placeholder {
+    color: #bfbfbf;
+}
+input:disabled::-webkit-input-placeholder { /* WebKit browsers */
+    color: #bfbfbf;
+}
+input:disabled:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #bfbfbf;
+}
+input:disabled::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #bfbfbf;
+}
+input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #bfbfbf;
+}
+input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    display: block;
+    width: 11px;
+    height: 10px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAn0lEQVR42u3UMQrDMBBEUZ9WfQqDmm22EaTyjRMHAlM5K+Y7lb0wnUZPIKHlnutOa+25Z4D++MRBX98MD1V/trSppLKHqj9TTBWKcoUqffbUcbBBEhTjBOV4ja4l4OIAZThEOV6jHO8ARXD+gPPvKMABinGOrnu6gTNUawrcQKNCAQ7QeTxORzle3+sDfjJpPCqhJh7GixZq4rHcc9l5A9qZ+WeBhgEuAAAAAElFTkSuQmCC);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: top left;
+}
+
+input:disabled::-webkit-search-cancel-button {
+    opacity: 0.4;
+}
+
+.small {
+    font-size: 10px;
+}
+
+.nobr {
+    white-space: nowrap;
+}
+
+.grey {
+    color: #666;
+}
+
+.info-multisite {
+    color: #3c763d;
+    background-color: #dff0d8;
+    padding: 15px;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+    display: inline-block;
+}

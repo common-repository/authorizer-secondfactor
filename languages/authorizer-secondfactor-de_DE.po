@@ -1,0 +1,497 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Authorizer SecondFactor\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: includes/admin_settings.php:70
+#, fuzzy, php-format
+#| msgid "Two Factor Authentication (Version: %s) - Admin Settings"
+msgid "Authorizer SecondFactor (Version: %s) - Admin Settings"
+msgstr "Authorizer SecondFactor (Version: %s) - Admin-Einstellungen"
+
+#: includes/admin_settings.php:76
+#, fuzzy
+#| msgid "Authorizer Two Factor Auth"
+msgid "Authorizer SecondFactor currently disabled"
+msgstr "Authorizer SecondFactor"
+
+#: includes/admin_settings.php:78
+#, fuzzy
+#| msgid ""
+#| "Two factor authentication is currently disabled via the "
+#| "TWO_FACTOR_DISABLE constant (which is mostly likely to be defined in your "
+#| "wp-config.php)"
+msgid ""
+"Authorizer SecondFactor is currently disabled via the TWO_FACTOR_DISABLE "
+"constant (which is mostly likely to be defined in your wp-config.php)"
+msgstr ""
+"Authorizer SecondFactor ist derzeit über die TWO_FACTOR_DISABLE-Konstante "
+"ausgeschaltet (diese wird meistens in Ihrer wp-config.php gesetzt)"
+
+#: includes/admin_settings.php:91
+msgid ""
+"N.B. These two-factor settings apply to your entire WordPress network. (i.e. "
+"They are not localised to one particular site)."
+msgstr ""
+"Diese SecondFactor-Einstellungen wirken sich auf Ihr gesamtes WordPress-"
+"Netzwerk aus (d. h. sie beschränken sich nicht auf eine spezielle Seite)."
+
+#: includes/admin_settings.php:105 includes/admin_settings.php:164
+msgid "Redo Plugin Auto-Configuration"
+msgstr "Plugin-Autokonfiguration erneut durchführen"
+
+#: includes/admin_settings.php:107 includes/admin_settings.php:166
+msgid ""
+"If your configuration does not work, enter your Authorizer Username and "
+"Password to automatically configure the plugin again."
+msgstr ""
+"Sollte das Plugin nicht funktionieren, geben Sie Ihren Authorizer-"
+"Benutzernamen und das -Passwort ein, um eine automatische Konfiguration "
+"durchzuführen."
+
+#: includes/admin_settings.php:105 includes/admin_settings.php:164
+msgid "Plugin Auto-Configuration"
+msgstr "Plugin-Autokonfiguration"
+
+#: includes/admin_settings.php:107 includes/admin_settings.php:166
+msgid ""
+"Enter your Authorizer username and "
+"password to automatically configure the plugin."
+msgstr ""
+"Geben Sie Ihren Authorizer-"
+"Benutzernamen und das -Passwort ein, um das Plugin automatisch zu konfigurieren."
+
+#: includes/admin_settings.php:112 includes/admin_settings.php:171
+#: two-factor-login.php:382
+msgid "Username"
+msgstr "Benutzername"
+
+#: includes/admin_settings.php:118 includes/admin_settings.php:177
+msgid "Password"
+msgstr "Passwort"
+
+#: includes/admin_settings.php:134 includes/user_settings.php:33
+msgid "Settings saved."
+msgstr "Einstellungen gespeichert."
+
+#: includes/admin_settings.php:139
+msgid "Users"
+msgstr "Benutzer"
+
+#: includes/admin_settings.php:141
+msgid ""
+"List of available users and their TFA settings on Authorizer SecondFactor"
+msgstr ""
+"Liste der verfügbaren Benutzer und ihrer TFA-Einstellungen für Authorizer "
+"SecondFactor"
+
+#: includes/admin_settings.php:147 includes/admin_settings.php:217
+#: includes/admin_settings.php:231 includes/admin_settings.php:245
+#: includes/tfa_frontend.php:41 includes/tfa_frontend.php:54
+#: includes/user_settings.php:46
+msgid "Submit"
+msgstr "Speichern"
+
+#: includes/admin_settings.php:89
+msgid "These two-factor settings apply to your entire WordPress network. They are not localised to one particular site."
+msgstr "Diese Zwei-Faktor-Einstellungen gelten für Ihr gesamtes WordPress-Netzwerk. Sie sind nicht auf einzelne Sites beschränkt."
+
+#: includes/admin_settings.php:154
+msgid "Advanced Settings"
+msgstr "Erweiterte Einstellungen"
+
+#: includes/admin_settings.php:155 includes/admin_settings.php:249
+msgid "Hide Advanced Settings"
+msgstr "Erweiterte Einstellungen schließen"
+
+#: includes/admin_settings.php:197
+msgid "XMLRPC requests"
+msgstr "XMLRPC-Anfrage"
+
+#: includes/admin_settings.php:201
+msgid ""
+"XMLRPC is a feature within WordPress allowing other computers to talk to "
+"your WordPress install. For example, it could be used by an app on your "
+"tablet that allows you to blog directly from the app (instead of needing the "
+"WordPress dashboard)."
+msgstr ""
+"XMLRPC ist ein Service in WordPress, der anderen Computern die Kommunikation "
+"mit Ihrer WordPress-Installation ermöglicht. Zum Beispiel kann genutzt "
+"werden, um direkt mit einer App auf Ihrem Tablet zu bloggen (anstelle das "
+"WordPress-Dashboard dafür zu nutzen)."
+
+#: includes/admin_settings.php:205
+msgid ""
+"Unfortunately, XMLRPC also provides a way for attackers to perform actions "
+"on your WordPress site, using only a password (i.e. without a two-factor "
+"password). More unfortunately, authors of legitimate programmes using XMLRPC "
+"have not yet added two-factor support to their code."
+msgstr ""
+"Allerdings bietet XMLRPC auch Wege für Angreifer, Ihre WordPress-Seite zu "
+"verändern, wenn nur ein Passwort genutzt wird (z. B. ohne SecondFactor-"
+"Authentifizierung). Bedauerlicherweise haben die Hersteller von Ihnen "
+"legitimierter Programme, die auf XMLRPC zurückgreifen, bislang keine "
+"Unterstützung für SecondFactor implementiert."
+
+#: includes/admin_settings.php:209
+msgid ""
+" i.e. XMLRPC requests coming in to WordPress (whether from a legitimate app, "
+"or from an attacker) can only be verified using the password - not with a "
+"two-factor code. As a result, there not be an ideal option to pick below. "
+"You may have to choose between the convenience of using your apps, or the "
+"security of two factor authentication."
+msgstr ""
+" zum Beispiel nutzen XMLRPC-Anfragen (unabhängig davon, ob diese von einer "
+"von Ihnen legitimierten App oder von einem Angreifer kommen), derzeit kein "
+"SecondFactor zur Authentifizierung. Daher müssen Sie sich hier zwischen "
+"Komfort Ihrer Apps oder der Sicherheit von SecondFactor entscheiden."
+
+#: includes/admin_settings.php:225
+msgid "Refresh Token"
+msgstr "Refresh Token"
+
+#: includes/admin_settings.php:226
+msgid "You will get the Refresh Token from the Authorizer Customer Panel."
+msgstr "Sie können Ihr Refresh Token im Authorizer Customer Panel generieren."
+
+#: includes/admin_settings.php:239
+msgid "ContractID"
+msgstr "Vertrags-ID"
+
+#: includes/admin_settings.php:240
+msgid "You will get your Contract ID from the Authorizer Customer Panel."
+msgstr "Sie können Ihre Vertrags-ID im Authorizer Customer Panel einsehen."
+
+#: includes/class-authorizer-tfa.php:560 includes/class-authorizer-tfa.php:573
+#: two-factor-login.php:269 two-factor-login.php:793
+msgid "Error:"
+msgstr "Fehler:"
+
+#: includes/class-authorizer-tfa.php:560
+msgid ""
+"The site owner has forbidden you to login without two-factor authentication. "
+"Please contact the site owner to re-gain access."
+msgstr ""
+"Der Besitzer der Seite hat das Login ohne Zwei-Faktor-Authentifizierung "
+"verboten. Bitte kontaktieren Sie den Seitenbesitzer, um wieder Zugang zu "
+"erhalten."
+
+#: includes/class-authorizer-tfa.php:573
+msgid ""
+"You are attempting to log in to an account that has two-factor "
+"authentication enabled; this requires you to also have two-factor "
+"authentication enabled on the account whose credentials you are using."
+msgstr ""
+"Sie versuchen, sich an einem Benutzerkonto einzuloggen, für das Zwei-Faktor-"
+"Authentifizierung aktiviert ist; aus diesem Grund müssen Sie auch für das "
+"Konto, das Sie gerade benutzen, Zwei-Faktor-Authentifizierung aktivieren."
+
+#: includes/tfa_frontend.php:83
+msgid "You have unsaved settings."
+msgstr "Einige Einstellungen sind noch nicht gespeichert."
+
+#: includes/tfa_frontend.php:101
+msgid "Saving..."
+msgstr "Speichern..."
+
+#: includes/tfa_frontend.php:147 includes/tfa_frontend.php:180
+msgid "Response:"
+msgstr "Rückmeldung:"
+
+#: includes/tfa_frontend.php:211
+msgid "Two factor authentication is not available for your user."
+msgstr ""
+"Für Ihr Benutzerkonto ist Zwei-Faktor-Authentifizierung nicht verfügbar."
+
+#: includes/user_settings.php:29
+msgid "Two Factor Authentication"
+msgstr "Zwei-Faktor-Authentifizierung"
+
+#: includes/user_settings.php:29
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: includes/user_settings.php:41
+msgid "Activate two factor authentication"
+msgstr "Zwei-Faktor-Authentifizierung aktivieren"
+
+#: two-factor-login.php:157
+msgid "Higher PHP version required"
+msgstr "Eine höhere PHP-Version wird benötigt"
+
+#: two-factor-login.php:157
+#, fuzzy, php-format
+#| msgid ""
+#| "The Two Factor Authentication plugin requires PHP version %s or higher - "
+#| "your current version is only %s."
+msgid ""
+"The Authorizer SecondFactor plugin requires PHP version %s or higher - your "
+"current version is only %s."
+msgstr ""
+"Das Authorizer SecondFactor-Plugin benötigt PHP in der Version %s oder höher "
+"- Sie benutzen derzeit die Version %s."
+
+#: two-factor-login.php:162
+msgid "PHP OpenSSL or mcrypt module required"
+msgstr "PHP OpenSSL- oder mcrypt-Modul- wird benötigt"
+
+#: two-factor-login.php:162
+#, fuzzy
+#| msgid ""
+#| "The Two Factor Authentication plugin requires either the PHP openssl "
+#| "(preferred) or mcrypt module to be installed. Please ask your web hosting "
+#| "company to install one of them."
+msgid ""
+"The Authorizer SecondFactor plugin requires either the PHP openssl "
+"(preferred) or mcrypt module to be installed. Please ask your web hosting "
+"company to install one of them."
+msgstr ""
+"Das Authorizer SecondFactor-Plugin benötigt entweder das PHP openssl- oder "
+"das mcrypt-Modul (bevorzugt openssl). Bitte nehmen Sie Kontakt mit Ihrem "
+"Webhosting-Anbieter auf, um dieses zu installieren."
+
+#: two-factor-login.php:269
+#, fuzzy
+#| msgid "The one-time password (TFA code) you entered was incorrect."
+msgid "The Authorizer security code you entered was incorrect."
+msgstr "Das von Ihnen eingegebene Einmalpasswort (TFA-Code) war falsch."
+
+#: two-factor-login.php:330
+#, php-format
+msgid ""
+"N.B. This site is configured to forbid you to log in if you disable two-"
+"factor authentication after your account is %d days old"
+msgstr ""
+"N.B. Diese Webseite ist derart konfiguriert, dass ein Login ohne Zwei-Faktor-"
+"Authentifizierung nicht mehr möglich ist, sobald das Nutzerkonto über %d "
+"Tage existiert"
+
+#: two-factor-login.php:333
+msgid "Enable two-factor authentication"
+msgstr "Zwei-Faktor-Authentifizierung einschalten"
+
+#: two-factor-login.php:333
+msgid "Enabled"
+msgstr "Eingeschaltet"
+
+#: two-factor-login.php:334
+msgid "Disable two-factor authentication"
+msgstr "Zwei-Faktor-Authentifizierung ausschalten"
+
+#: two-factor-login.php:334
+msgid "Disabled"
+msgstr "Ausgeschaltet"
+
+#: two-factor-login.php:383
+msgid "TFA active"
+msgstr "SecondFactor aktiv"
+
+#: two-factor-login.php:384
+msgid "mailTAN"
+msgstr "mailTAN"
+
+#: two-factor-login.php:385
+msgid "smsTAN"
+msgstr "smsTAN"
+
+#: two-factor-login.php:415 two-factor-login.php:432
+msgid "Email address"
+msgstr "E-Mail-Adresse"
+
+#: two-factor-login.php:447 two-factor-login.php:463
+msgid "Mobile phone number"
+msgstr "Mobilfunknummer"
+
+#: admin-settings.php:144
+msgid ""
+"Data is stored in the Authorizer Cloud and synced between your WordPress "
+"instances."
+msgstr ""
+"Die Daten werden in der Authorizer Cloud gespeichert und zwischen Ihren "
+"WordPress-Instanzen synchronisiert."
+
+#: admin-settings.php:145
+msgid "Mobile phone number in international format starting with 00."
+msgstr "Mobilfunknummer in internationalem Format, beginnend mit 00."
+
+#: two-factor-login.php:480
+msgid "Accounts available"
+msgstr "Accounts verfügbar"
+
+#: two-factor-login.php:481
+msgid "SMS available"
+msgstr "SMS verfügbar"
+
+#: two-factor-login.php:482
+msgid "transactions available"
+msgstr "Transaktionen verfügbar"
+
+#: two-factor-login.php:482
+msgid "unlimited"
+msgstr "unbeschränkt"
+
+#: two-factor-login.php:521
+msgid "Multisite Super Admin"
+msgstr "Multisite Super-Admin"
+
+#: two-factor-login.php:566
+msgid "TOTP (time based - most common algorithm; used by Google Authenticator)"
+msgstr "TOTP (zeitbasiert - zumeist verwendet. u. a. von Google Authenticator)"
+
+#: two-factor-login.php:566
+msgid "HOTP (event based)"
+msgstr "HOTP (vorfallbasiert)"
+
+#: two-factor-login.php:579
+msgid ""
+"Do not require 2FA over XMLRPC (best option if you must use XMLRPC and your "
+"client does not support 2FA)"
+msgstr ""
+"Zwei-Faktor-Authentifizierung nicht über XMLRPC verlangen (empfohlen, wenn "
+"XMLRPC eingesetzt werden muss und der Client Zwei-Faktor-Authentifizierung "
+"nicht unterstützt)"
+
+#: two-factor-login.php:580
+msgid ""
+"Do require 2FA over XMLRPC (best option if you do not use XMLRPC or are "
+"unsure)"
+msgstr ""
+"Zwei-Faktor-Authentifizierung über XMLRPC verlangen (empfohlen, wenn XMLRPC "
+"nicht eingesetzt werden muss oder Sie unsicher sind)"
+
+#. Plugin Name of the plugin/theme
+#: two-factor-login.php:613 two-factor-login.php:627 two-factor-login.php:628
+#, fuzzy
+#| msgid "Authorizer Two Factor Auth"
+msgid "Authorizer SecondFactor"
+msgstr "Authorizer SecondFactor"
+
+#: two-factor-login.php:613
+#, fuzzy
+#| msgid "Two Factor Auth"
+msgid "SecondFactor Auth"
+msgstr "Zwei-Faktor-Authentifizierung"
+
+#: two-factor-login.php:639 two-factor-login.php:643
+msgid "Plugin settings"
+msgstr "Plugin-Einstellungen"
+
+#: two-factor-login.php:678
+msgid "Advanced settings"
+msgstr "Experten-Einstellungen"
+
+#: two-factor-login.php:703
+msgid "Click to enter One Time Password"
+msgstr "Zur Eingabe des Einmalpassworts klicken"
+
+#: two-factor-login.php:704 two-factor-login.php:811
+msgid "You have to enter a username first."
+msgstr "Sie müssen zuerst einen Nutzernamen eingeben."
+
+#: two-factor-login.php:705
+#, fuzzy
+#| msgid "Authorizer Two Factor Auth"
+msgid "Authorizer Security Code"
+msgstr "Authorizer SecondFactor"
+
+#: two-factor-login.php:706
+#, fuzzy
+#| msgid ""
+#| "(Check your Secondfactor client (e.g. mail or SMS client) to get this "
+#| "password)"
+msgid ""
+"(Check your SecondFactor client (e.g. mail or SMS client) to get this "
+"password)"
+msgstr "(das Passwort wird auf Ihrem gewählten Gerät (z. B. Handy) angezeigt)"
+
+#: two-factor-login.php:708
+msgid "Please choose your desired OTP method"
+msgstr "Bitte wählen Sie Ihre gewünschte SecondFactor-Methode aus"
+
+#: two-factor-login.php:709
+msgid "SMS"
+msgstr "SMS"
+
+#: two-factor-login.php:710
+msgid "Email"
+msgstr "E-Mail"
+
+#: two-factor-login.php:711
+msgid "Card"
+msgstr "Karte"
+
+#: two-factor-login.php:712
+msgid "Unfortunately no second factor method is available."
+msgstr "Leider ist derzeit keine SecondFactor-Methode verfügbar."
+
+#: two-factor-login.php:731
+msgid "These are your personal settings."
+msgstr "Dies sind Ihre persönlichen Einstellungen."
+
+#: two-factor-login.php:731
+msgid "Nothing you change here will have any effect on other users."
+msgstr "Nicht, was Sie hier ändern, wird sich auf andere Nutzer auswirken."
+
+#: two-factor-login.php:734
+msgid ""
+"If you activate two-factor authentication, please make sure that you have it "
+"properly configured."
+msgstr ""
+"Bevor Sie die Zwei-Faktor-Authentifizierung aktivieren: Stellen Sie "
+"unbedingt sicher, dass alle Einstellungen korrekt sind."
+
+#: two-factor-login.php:793
+msgid "The one-time password (TFA code) you entered was incorrect."
+msgstr "Das von Ihnen eingegebene Einmalpasswort (TFA-Code) war falsch."
+
+#: two-factor-login.php:810
+msgid "Enter One Time Password (if you have one)"
+msgstr "Geben Sie das Einmalpasswort ein (sofern Sie eines bekommen haben)"
+
+#: two-factor-login.php:812
+msgid "One Time Password"
+msgstr "Einmalpasswort"
+
+#: two-factor-login.php:814
+msgid "(check your OTP app to get this password)"
+msgstr "(schauen Sie in Ihre App, um diesen Code zu bekommen)"
+
+#: admin_settings.php:98
+msgid "For more information see"
+msgstr "Mehr Informationen unter"
+
+#: admin_settings.php:98
+msgid "www.authorizer.de/en/wordpress"
+msgstr "www.authorizer.de/wordpress"
+
+#: admin_settings.php:20
+msgid "Unauthorized. Have you already activated your Authorizer customer account?"
+msgstr "Fehler bei Autorisierung. Haben Sie Ihr Authorizer Kundenkonto bereits aktiviert?"
+
+#: admin_settings.php:122
+msgid "Configure Plugin Settings"
+msgstr "Autokonfiguration starten"
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://www.authorizer.de"
+msgstr "https://www.authorizer.de"
+
+#. Description of the plugin/theme
+msgid ""
+"Secure your WordPress login forms with two factor authentication based on "
+"Authorizer SecondFactor."
+msgstr ""
+"Sichern Sie Ihr WordPress-Login mit einer Zwei-Faktor-Authentifizierung von "
+"Authorizer SecondFactor ab."
+
+#. Author of the plugin/theme
+msgid "Signatis GmbH"
+msgstr "Signatis GmbH"
+
